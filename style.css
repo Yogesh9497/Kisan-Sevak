@@ -192,26 +192,39 @@ a{
     background-color: darkgreen;
     margin-top: 0;
     padding: 5px;
+    margin-bottom: -10px;
 }
 
-.chats li{
+.chats li, .groups li{
     list-style: none;
-    padding: 10px;
 }
 
-.chats img{
-    width: 35px;
+.chats img, .groups img{
+    width: 45px;
     border-radius: 50%;
     margin-right: 10px;
-    margin-top: 5px;
+    margin-top: 15px;
 }
 
-/* .chats li{
+.chats li div div, .groups li div div{
     display: flex;
-    justify-content: center;
-} */
+    flex-direction: column;
+}
 
+.chats li div div h3, .groups li div div h3{
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
 
+.chats li div div p, .groups li div div p{
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.chats li div, .groups li div{
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
 
 
 .right-sidebar-2{
@@ -225,11 +238,12 @@ a{
     background-color: darkgreen;
     margin-top: 0;
     padding: 5px;
+    margin-bottom: -10px;
 }
 
 .groups li{
     list-style: none;
-    padding: 10px;
+    padding: 0;
 }
 
 /* .right-sidebar-2{
